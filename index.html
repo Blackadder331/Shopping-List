@@ -9,25 +9,30 @@
     <script defer src="list.js"></script>
 </head>
 <body>
-    <div>
-        <h1>
-            Shopping List
-        </h1>
-        <p>
-            <small>
-                Make a list of what you need to buy
-            </small>
-        </p>
-        <input type="text" id="myInput" placeholder="Grocery item...">
-        <span onclick="newElement()" class="addBtn">Add item</span>
+
+    <div id="container">
+        <div>
+            <h1>
+                Shopping List
+            </h1>
+            <p>
+                <!-- <small>
+                    Make a list of what you need to buy
+                </small> -->
+            </p>
+            <div id="input-bar">
+                <input type="text" id="myInput" placeholder="➔  Add grocery item">
+                <span onclick="newElement()" class="addBtn">Add item </span>
+            </div>
+        </div>
+        <ul id="myUL">
+            <li>Molly</li>
+            <li class="checked">Tin Foil</li>
+            <li>Baking Soda</li>
+            <li>Cyanide</li>
+            <li>Rope</li>
+            <li>Razor Blades</li>
+        </ul>
     </div>
-    <ul id="myUL">
-        <li>Molly</li>
-        <li class="checked">Tin Foil</li>
-        <li>Baking Soda</li>
-        <li>Cyanide</li>
-        <li>Rope</li>
-        <li>Razor Blades</li>
-    </ul>
 </body>
 </html>
