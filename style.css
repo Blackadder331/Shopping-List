@@ -1,0 +1,133 @@
+/* CSS Resets */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+
+* { 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body { 
+    margin: 0; 
+    padding: 0; 
+    font-size: 15px; 
+    /* ^ 15px rem base number for type scaling*/
+    color: white;
+    background-color: #222222;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h1, h2, h3, h4, h5 {
+    line-height: 1.1;
+}
+
+body,
+input,
+button,
+select,
+textarea {
+    font: 600 1rem 'Poppins'; 
+    /* color: white */
+}
+
+/* a { text-decoration: none; }
+a:link { color: #6A26CD; }
+a:hover { color: #431488; }
+a:active { color: #6A26CD; }
+a:visited { color: #6A26CD; } */
+
+html, body, #root { height: 100%; }
+
+ul, ol { margin: 0 0 1rem; padding: 0; }
+
+table { border-collapse: collapse; }
+th { text-align: left; border-bottom: 1px solid white; }
+td { vertical-align: middle; }
+
+table:not(th){
+    font-weight: 200;
+}
+/* END CSS Resets */
+
+ul {
+    margin-top: 2rem;
+}
+
+ul li {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+/* Darker background-color on hover */
+ul li:hover {
+    background: rgb(64, 64, 64);
+}
+  
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+    background: rgb(123, 123, 123);
+    color: #222222;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+/* ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+
+    
+    display: none;
+} */
+
+/* Style the close button */
+.close {
+    right: 0;
+    top: 0;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.close:hover {
+    color: #f44336;
+}
+
+.addBtn {
+    outline: 1px solid white;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    kerning: auto;
+    text-rendering: optimizeLegibility;
+}
+
+#myInput {
+    outline: none;
+    border: none;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    margin-right: .5rem;
+    font-weight: 100;
+}
